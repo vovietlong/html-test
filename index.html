@@ -1,50 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>My Travel Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>My Travel Blog</title>
+
+<style>
+
+/* Skip link */
+.skip{
+position:absolute;
+left:-999px;
+}
+
+.skip:focus{
+left:10px;
+top:10px;
+background:white;
+padding:10px;
+}
+
+/* Commented li style */
+/*
+li{
+display:inline;
+}
+*/
+
+nav{
+display:inline-block;
+width:80%;
+}
+
+nav img{
+width:10%;
+}
+
+.grid{
+display:grid;
+grid-template-columns:40% 40%;
+justify-content:space-between;
+align-items:start;
+row-gap:20px;
+}
+
+.grid img{
+width:100%;
+}
+
+.flex{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
+}
+
+</style>
+
 </head>
+
 <body>
 
+<a class="skip" href="#main-content">Skip to Main Content</a>
+
 <header>
-    <h1>Welcome to My Travel Blog</h1>
+<h1>My Travel Blog</h1>
 </header>
 
-<main>
-    <section>
-        <h2>My Favorite Destinations</h2>
+<nav>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" alt="Paris">
 
-        <ul>
-            <li>Paris</li>
-            <li>Tokyo</li>
-            <li>New York</li>
-        </ul>
+<ul>
+<li>Paris</li>
+<li>Tokyo</li>
+<li>New York</li>
+</ul>
+</nav>
 
-        <p>Traveling allows us to experience different cultures, food, and landscapes. 
-        You can learn more about travel tips at 
-        <a href="https://www.lonelyplanet.com/" target="_blank">
-            Lonely Planet
-        </a>.
-        </p>
-    </section>
+<main id="main-content">
 
-    <section>
-        <h2>Beautiful Places</h2>
+<section class="grid">
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" 
-             alt="Paris at night" width="300">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" alt="Paris">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Tokyo_Tower_and_around_Skyscrapers.jpg" alt="Tokyo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" alt="New York">
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Tokyo_Tower_and_around_Skyscrapers.jpg" 
-             alt="Tokyo city skyline" width="300">
+</section>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" 
-             alt="Times Square in New York" width="300">
-    </section>
+<section class="flex">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" width="200" alt="Paris">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Tokyo_Tower_and_around_Skyscrapers.jpg" width="200" alt="Tokyo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" width="200" alt="New York">
+
+</section>
+
+<p>
+Learn more travel tips at
+<a href="https://www.lonelyplanet.com/" target="_blank">
+Lonely Planet
+</a>
+</p>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 My Travel Blog</p>
+<p>© 2026 My Travel Blog</p>
 </footer>
 
 </body>
