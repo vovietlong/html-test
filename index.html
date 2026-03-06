@@ -4,58 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>My Travel Blog</title>
-
-<style>
-
-/* Skip link */
-.skip{
-position:absolute;
-left:-999px;
-}
-
-.skip:focus{
-left:10px;
-top:10px;
-background:white;
-padding:10px;
-}
-
-/* Commented li style */
-/*
-li{
-display:inline;
-}
-*/
-
-nav{
-display:inline-block;
-width:80%;
-}
-
-nav img{
-width:10%;
-}
-
-.grid{
-display:grid;
-grid-template-columns:40% 40%;
-justify-content:space-between;
-align-items:start;
-row-gap:20px;
-}
-
-.grid img{
-width:100%;
-}
-
-.flex{
-display:flex;
-flex-wrap:wrap;
-justify-content:space-around;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -67,39 +16,30 @@ justify-content:space-around;
 </header>
 
 <nav>
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" alt="Paris">
 
 <ul>
-<li>Paris</li>
-<li>Tokyo</li>
-<li>New York</li>
+<li><a href="index.html">Home</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
 </ul>
+
 </nav>
 
 <main id="main-content">
 
+<h2>Popular Destinations</h2>
+
 <section class="grid">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" alt="Paris">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Tokyo_Tower_and_around_Skyscrapers.jpg" alt="Tokyo">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" alt="New York">
 
-</section>
-
-<section class="flex">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" width="200" alt="Paris">
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Tokyo_Tower_and_around_Skyscrapers.jpg" width="200" alt="Tokyo">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg" width="200" alt="New York">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/London_Montage_L.jpg" alt="London">
 
 </section>
-
-<p>
-Learn more travel tips at
-<a href="https://www.lonelyplanet.com/" target="_blank">
-Lonely Planet
-</a>
-</p>
 
 </main>
 
